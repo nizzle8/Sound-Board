@@ -1,8 +1,9 @@
-const sounds = ["C3","D3", "E3", "F3", "G3"];
+const sounds = ["C3","C3S", "D3","D3S", "E3", "F3","F3S", "G3", "G3S"];
 
 sounds.forEach(sound => {
     const btn = document.createElement("button");
-    btn.classList.add("btn");
+    btn.classList.add("btn", `"${sound}"`);
+    
     
     btn.innerText = sound;
 
